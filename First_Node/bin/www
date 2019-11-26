@@ -1,5 +1,8 @@
 #!/usr/bin/env node
 
+// 웹서버와 관련된 부분은 /bin/www에 들어있다.
+// npm start: www 파일을 실행시키는 명령어임.
+
 /**
  * Module dependencies.
  */
@@ -12,6 +15,8 @@ var http = require('http');
  * Get port from environment and store in Express.
  */
 
+// 웹 서버의 포트값을 설정하는 부분. 기본:3000
+// http.createServer()에서 이 코드의 포트 설정을 가지고 http 서버를 만든다.
 var port = normalizePort(process.env.PORT || '3000');
 app.set('port', port);
 
