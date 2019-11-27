@@ -20,7 +20,7 @@ var app = express();
 // 앞으로 view 템플릿 파일을 만들고 난 후, views 폴더 안에 넣어주고 라우팅 설정
 app.set('views', path.join(__dirname, 'views'));
 // 뷰에 사용될 기본 엔진의 이름을 정의 express 에서는 ejs, pug(jade) 등을 지원함.
-app.set('view engine', 'jade');
+app.set('view engine', 'pug');
 
 app.use(logger('dev'));
 app.use(express.json());

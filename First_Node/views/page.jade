@@ -1,0 +1,30 @@
+html
+    head
+        title= title
+        script
+        if (foo) {
+            bar();
+        } else {
+            baz();
+        }
+    body
+        div#goormDiv1
+        #goormDiv2
+
+        div.divStyle2
+        .divStyle1.divStyle2
+
+        #contents(style="border: 1px solid black;")
+            input(type="checkbpx", checked)
+
+        //- <div id="goormElement1">Hello Pug!</div>
+        div#goormElement1 Hello Pug!
+        
+        //- 여러 줄쓰기
+        #goormElement1
+            | edu.goorm.io
+            | 구름EDU 사이트
+
+        //- 동적 컨텐츠 표현
+        #subject #{title}
+        #msg #{message}
